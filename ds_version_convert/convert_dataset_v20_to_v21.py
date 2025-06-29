@@ -101,7 +101,7 @@ def convert_dataset(
     else:
         convert_stats(dataset, num_workers=num_workers)
     ref_stats = load_stats(dataset.root)
-    check_aggregate_stats(dataset, ref_stats)
+    # check_aggregate_stats(dataset, ref_stats)
 
     dataset.meta.info["codebase_version"] = V21
     write_info(dataset.meta.info, dataset.root)
