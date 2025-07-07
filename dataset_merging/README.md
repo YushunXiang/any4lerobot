@@ -28,7 +28,7 @@ pip install numpy pandas
 ### （一）基本用法
 通过命令行运行工具，示例如下：
 ```bash
-python dataset_merger.py --sources /path/to/dataset1 /path/to/dataset2 /path/to/dataset3 --output /path/to/output_dataset
+python dataset_merging/merge_lerobot_dataset.py --sources /path/to/dataset1 /path/to/dataset2 /path/to/dataset3 --output /path/to/output_dataset
 ```
 ### （二）命令行参数
 - **--sources**：源数据集文件夹路径列表，至少需要指定一个源数据集路径。
@@ -40,7 +40,7 @@ python dataset_merger.py --sources /path/to/dataset1 /path/to/dataset2 /path/to/
 
 ### （三）示例
 ```bash
-python dataset_merger.py --sources ./robot_dataset_1 ./robot_dataset_2 --output ./merged_dataset --state_max_dim 32 --action_max_dim 18 --fps 30
+python dataset_merging/merge_lerobot_dataset.py --sources ./robot_dataset_1 ./robot_dataset_2 --output ./merged_dataset --state_max_dim 32 --action_max_dim 18 --fps 30
 ```
 
 ## 五、数据集格式
