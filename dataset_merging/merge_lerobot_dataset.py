@@ -1675,8 +1675,8 @@ if __name__ == "__main__":
     # Add arguments
     parser.add_argument("--sources", nargs="+", required=True, help="List of source folder paths")
     parser.add_argument("--output", required=True, help="Output folder path")
-    parser.add_argument("--state_max_dim", type=int, default=32, help="Maximum state vector dimension (default: 32)")
-    parser.add_argument("--action_max_dim", type=int, default=32, help="Maximum action vector dimension (default: 32)")
+    parser.add_argument("--state_max_dim", type=int, default=8, help="Maximum state vector dimension (default: 32)")
+    parser.add_argument("--action_max_dim", type=int, default=8, help="Maximum action vector dimension (default: 32)")
     parser.add_argument("--fps", type=int, default=20, help="Your datasets FPS (default: 20)")
     parser.add_argument("--copy_images", action="store_true", help="Whether to copy images (default: False)")
 
